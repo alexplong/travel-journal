@@ -6,8 +6,21 @@ h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
 }
 
+.text-gray {
+  color: #918E9B;
+}
+
 body {
   font-family: Inter, sans-serif;
+}
+
+section {
+  margin: 64px 40px;
+  font-size: 10.24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 header {
@@ -23,4 +36,67 @@ header {
   width: 24px;
   height: 24px;
   margin-right: 7px;
+}
+
+.card:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.card {
+  position: relative;
+  height: auto;
+  width: 470px;
+  display: flex;
+}
+
+.card--main_image {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  object-fit: cover;
+  float: left;
+}
+
+.card--details {
+  position: absolute;
+  top: 20px;
+  left: 145px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.card--location_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 7px;
+}
+
+.card--marker_icon {
+  width: 7px;
+  height: 9.55px;
+}
+
+.card--location {
+  font-weight: normal;
+  padding-left: 4px;
+  padding-right: 12px;
+}
+
+.card--title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.card--dates {
+  font-weight: 700;
+  line-height: 12px;
+  padding-block: 15px 9px;
+}
+
+.card--description {
+  line-height: 150%;
 }

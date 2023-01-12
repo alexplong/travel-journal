@@ -3,7 +3,7 @@
 import React from "react";
 import globeIcon from "../images/globe-icon.png";
 
-function Header(props) {
+function Header() {
   return (
     <header>
       <img alt="icon" src={globeIcon} className="header--icon" />
